@@ -146,7 +146,20 @@ body {
 
 .container { padding-inline: 20px; }
 
+.btn {
+  color: var(--white);
+  font-family: var(--ff-barlow);
+  font-size: var(--fs-5);
+  font-weight: var(--fw-600);
+  max-width: max-content;
+  padding: var(--padding, 10px 40px);
+  border-radius: 50px;
+  transition: var(--transition-2);
+}
 
+.btn-primary.blue { background-color: var(--klein-blue); }
+
+.btn-primary.blue:is(:hover, :focus) { background-color: var(--orange-soda); }
 
 
 /*[][][]============ HEADER ============ [][][]*/
