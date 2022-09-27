@@ -20,7 +20,7 @@ project by @tommycbird on github
     --minion-yellow: hsl(50, 100%, 64%);
     --independence: hsl(124, 23%, 12%);
     --orange-soda: hsl(41, 43%, 56%);
-    --space-cadet: hsl(129, 41%, 18%);
+    --space-cadet: hsl(129, 28%, 32%);
     --fiery-rose: hsl(353, 83%, 65%);
     --klein-blue: hsl(120, 16%, 39%);
     --bluetiful: hsl(222, 88%, 55%);
@@ -124,7 +124,7 @@ html {
 }
 
 body {
-  background-color: var(--space-cadet);
+  background-color: hsl(120, 17%, 30%);
   color: var(--cadet-blue-crayola);
   font-size: 1.6rem;
   line-height: 1.6;
@@ -197,7 +197,7 @@ body {
     position: fixed;
     padding-block: 15px;
     width: 100%;
-    background-color: var(--space-cadet);
+    background-color: hsl(159, 31%, 39%);
     height: 65px;
     box-shadow: var(--shadow);
     overflow: hidden;
@@ -337,6 +337,8 @@ body {
 .portfolio .section-title { margin-block-end: 18px; }
 
 .portfolio .section-text { margin-block-end: 80px; }
+
+.portfolio{ background-color: hsl(127, 27%, 19%);}
 
 .portfolio-list {
   display: grid;
