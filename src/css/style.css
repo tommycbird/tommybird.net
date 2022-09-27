@@ -157,7 +157,10 @@ body {
   transition: var(--transition-2);
 }
 
-.btn-primary.blue { background-color: var(--klein-blue); }
+.btn-primary.blue { 
+  background-color: var(--klein-blue); 
+  vertical-align: baseline;
+}
 
 .btn-primary.blue:is(:hover, :focus) { background-color: var(--orange-soda); }
 
@@ -259,8 +262,6 @@ body {
     background-color: var(--orange-soda);
     margin-block-start: 15px;
   }
-
-
 
 
 /*[][][]============ HERO PIC ============ [][][]*/
@@ -550,8 +551,6 @@ body {
     margin-block-start: 0;
     --padding: 7px 30px;
   }
-
-
 
   /* HERO IMAGE */
 
