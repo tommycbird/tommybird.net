@@ -13,7 +13,7 @@ project by @tommycbird on github
 
 /*colors*/
 
-    --cadet-blue-crayola: hsl(70, 3%, 53%);
+    --cadet-blue-crayola: hsl(69, 18%, 71%);
     --gold-web-golden: hsl(50, 100%, 54%);
     --vivid-sky-blue: hsl(196, 84%, 63%);
     --midnight-blue: hsl(231, 83%, 25%);
@@ -25,7 +25,7 @@ project by @tommycbird on github
     --klein-blue: hsl(120, 16%, 39%);
     --bluetiful: hsl(222, 88%, 55%);
     --glaucous: hsl(230, 52%, 63%);
-    --manatee: hsl(254, 7%, 65%);
+    --manatee: hsl(250, 57%, 64%);
     -rufous: hsl(2, 85%, 35%);
     --black: hsl(0, 0%, 0%);
     --white: hsl(0, 0%, 100%);
@@ -359,7 +359,7 @@ body {
 .portfolio-list > li:nth-child(even) .card-content { margin-inline-start: auto; }
 
 .portfolio-card .card-subtitle {
-  color: var(--orange-soda);
+  color: var(--manatee);
   margin-block-end: 5px;
 }
 
@@ -377,7 +377,7 @@ body {
 }
 
 .portfolio-card .btn-link ion-icon {
-  color: var(--orange-soda);
+  color: var(--manatee);
   font-size: 1.6rem;
 }
 
