@@ -117,7 +117,7 @@ html {
 body {
   background-color: hsl(120, 17%, 30%);
   color: var(--parchment);
-  font-size: 1.6rem;
+  font-size: 2rem;
   line-height: 1.6;
   overflow-x: hidden;
 }
@@ -191,16 +191,20 @@ body {
     position: fixed;
     padding-block: 15px;
     width: 100%;
-    background-color: var(--meadow);
-    height: 65px;
+    background-color: transparent;
+    height: 75px;
     box-shadow: var(--shadow);
     overflow: hidden;
     transition: 0.25s var(--cubic-out);
     z-index: 4;
 }
+
+.header.active{
+  background-color: var(--meadow);
+}
   
 .header.nav-active {
-    height: 250px;
+    height: 260px;
     transition-duration: 0.35s;
 }
 
@@ -213,7 +217,7 @@ body {
   .logo {
     color: var(--white);
     font-family: var(--ff-poppins);
-    font-size: 2.4rem;
+    font-size: 3rem;
   }
   
   .nav-toggle-btn { font-size: 3rem; }
@@ -229,7 +233,7 @@ body {
     top: 65px;
     left: 0;
     width: 100%;
-    padding-inline: 20px;
+    padding-inline: 30px;
     visibility: hidden;
     opacity: 0;
     transition: var(--transition-2);
@@ -509,27 +513,14 @@ body {
 /* MOBILE SCREENS ----------------*/
 
 /* Responsive styles for stacking image on top of text */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 992px) {
 
-  .logo {
-    color: var(--white);
-    font-family: var(--ff-poppins);
-    font-size: 3rem;
-  }
 
   p {
     font-size: 2.0rem;
   }
 
-  .header{
-    background-color: transparent;
-  }
-
   .header.nav-active{
-    background-color: var(--meadow);
-  }
-
-  .header.active{
     background-color: var(--meadow);
   }
 
@@ -600,6 +591,16 @@ body {
     margin-inline: auto;
   }
 
+  .logo {
+    color: var(--white);
+    font-family: var(--ff-poppins);
+    font-size: 2.4rem;
+  }
+
+  p {
+    font-size: 1.6rem;
+  }
+
   /* HEADER */
 
   .nav-toggle-btn { display: none; }
@@ -613,7 +614,6 @@ body {
   }
 
   .header.active {
-    background-color: var(--meadow);
     box-shadow: var(--shadow);
     padding-block: 20px;
   }
