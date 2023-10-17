@@ -14,11 +14,12 @@ project by @tommycbird on github
 /*colors*/
 
     --parchment: hsl(69, 18%, 71%);
-    --murk: hsl(124, 23%, 12%);
-    --orange: hsl(41, 43%, 56%);
-    --moss: hsl(129, 28%, 32%);
-    --meadow: hsl(120, 16%, 39%);
-    --manatee: hsl(250, 57%, 64%);
+    --murk: hsl(163, 75%, 22%);
+    --orange: hsl(69, 66%, 61%);
+    --moss: hsl(130, 36%, 47%);
+    --moss2: hsl(112, 33%, 49%);
+    --meadow: hsl(151, 36%, 36%);
+    --manatee: hsl(198, 71%, 14%);
     --white: hsl(0, 0%, 100%);
 
 /*font*/
@@ -115,7 +116,7 @@ html {
 }
 
 body {
-  background-color: hsl(120, 17%, 30%);
+  background-color: var(--meadow);
   color: var(--parchment);
   font-size: 2rem;
   line-height: 1.6;
@@ -149,11 +150,11 @@ body {
 }
 
 .btn-primary.blue { 
-  background-color: var(--meadow); 
+  background-color: var(--moss); 
   vertical-align: baseline;
 }
 
-.btn-primary.blue:is(:hover, :focus) { background-color: var(--orange); }
+.btn-primary.blue:is(:hover, :focus) { background-color: var(--moss2); }
 
 .img-cover {
   width: 100%;
@@ -197,6 +198,16 @@ body {
     overflow: hidden;
     transition: 0.25s var(--cubic-out);
     z-index: 4;
+}
+
+.title {
+  display: flex;
+  align-items: center; 
+}
+
+.title img {
+  margin-right: 10px; 
+  filter: drop-shadow(3px 3px 1px rgba(0, 0, 0, 0.5));
 }
 
 .header.active{
@@ -254,7 +265,7 @@ body {
   .navbar-link:is(:hover, :focus) { color: var(--orange); }
 
   .navbar .btn {
-    background-color: var(--orange);
+    background-color: var(--moss);
     margin-block-start: 15px;
   }
 
@@ -334,7 +345,7 @@ body {
 
 .portfolio .section-text { margin-block-end: 80px; }
 
-.portfolio{ background-color: hsl(127, 27%, 19%);}
+.portfolio{ background-color: var(--meadow);}
 
 .portfolio-list {
   display: flex;
@@ -353,8 +364,8 @@ body {
 
 .image-container {
   position: relative;
-  width: 40%; /* Adjust as needed */
-  height: auto; /* Adjust as needed */
+  width: 40%; 
+  height: auto; 
   border-radius: 20px;
   overflow: hidden;
 }
@@ -670,7 +681,7 @@ body {
 
   /* ABOUT */
 
-  .about { padding-block: 180px; }
+  .about { padding-block: 80px; }
 
   .about .container {
     display: grid;
