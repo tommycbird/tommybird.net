@@ -422,6 +422,12 @@ body {
   margin: 10px 0;
 }
 
+.project-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
 .project-button {
   display: inline-block;
   padding: 5px 20px;
@@ -448,6 +454,7 @@ body {
 .project:nth-child(even) .project-details {
   order: 1;
 }
+
 
 
 
@@ -556,6 +563,10 @@ body {
 
   .project-button{
     align-self: flex-end;
+  }
+
+  .project-buttons{
+    justify-content: right;
   }
 
   .project:nth-child(n) .image-container {
@@ -677,7 +688,18 @@ body {
   }
 
 
-  
+  /* PORTFOLIO */
+
+  /* Alternate flex for buttons */
+  .project:nth-child(even) .project-buttons {
+    justify-content: left;
+  }
+
+  .project:nth-child(odd) .project-buttons {
+    justify-content: right;
+  }
+
+
 
   /* ABOUT */
 
