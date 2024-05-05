@@ -21,8 +21,8 @@
 
         <a href="#">
           <div class="title">
-            <img src="src/img/icon.png" width="50" height="50">
-            <h1 class="logo">Thomas Bird</h1>
+            <img src="src/img/icon.png" width="60" height="60">
+            <h1 class="logo">Tommy Bird</h1>
           </div>
         </a>
 
@@ -70,8 +70,8 @@
             </div>
             <div class="hero-content">
               <h2 class="hero-title">
-                <span>Hello!</span>
-                <strong>I'm Thomas Bird</strong>
+                <span>Hey!</span>
+                <strong>I'm Tommy Bird</strong>
                 <!-- text here maybe -->
               </h2>
               <p class="hero-text">
@@ -113,7 +113,7 @@
               <p class="section-text">
                 Below, you can find info on some of the projects I've worked on.
               </p>
-              <!-- PORTFOLIO BUTTON (really unnecessary) -->
+              <!-- PORTFOLIO BUTTON (kinda unnecessary) -->
               <a href="#portfolio" class="btn btn-primary blue">Portfolio</a>
             </div>
           </div>
@@ -133,14 +133,35 @@
             <!-- PORTFOLIO LIST -->
             <div class="portfolio-list">
 
-              
+              <!-- Image Blender -->
+              <div class="project">
+                <div class="image-container">
+                  <img src="./src/img/portfolio/portfolio-img-blender.png" alt="Project Image">
+                  <div class="image-overlay">
+                    <a class="project-img-text">On the left are the two input images. 
+                      On the right they are fused together at matching points.</a>
+                  </div>
+                </div>
+                <div class="project-details">
+                  <h3 class="project-title">Image Blender</h3>
+                  <p class="project-subtitle">Python Computer Vision Program</p>
+                  <p class="project-text">
+                    If you have multiple images of the same scene taken at different angles and/or positions, this program will blend any number of them together, creating a higher resolution image.
+                    This was achieved with computer vision techniques such as SIFT, Flann-based matching, RANSAC, and a good bit of matrix algebra on homography/fundamental matrices. 
+                    It was made in <mark>Python</mark>, leveraging the <mark>OpenCV</mark> and <mark>NumPy</mark> libraries.
+                  </p>
+                  <div class="project-buttons">
+                    <a href="https://google.com" class="project-button">Source Code</a>
+                  </div>
+                </div>
+              </div>
 
               <!-- Readee -->
               <div class="project">
                 <div class="image-container">
-                  <img src="./src/img/portfolio-readee.png" alt="Project Image">
+                  <img src="./src/img/portfolio/portfolio-readee.png" alt="Project Image">
                   <div class="image-overlay">
-                    <a href="https://github.com/tommycbird/Readee" class="project-link">Source Code</a>
+                    <a class="project-img-text">After selecting the term "Arctic Fox," the extension displays an AI-generated contextual definition (left), as well as an interactable 3D model of the fox (right).</a>
                   </div>
                 </div>
                 <div class="project-details">
@@ -148,10 +169,11 @@
                   <p class="project-subtitle">Chrome Extension</p>
                   <p class="project-text">
                     Readee addresses a fundamental challenge in online learning and reading comprehension: the difficulty of visualizing and understanding complex terms and concepts.
-                    The tool was created for a hackathon within a 24-hour constraint. It uses Echo3D's JS SDK, and GPT-4 API via Node.js hosted on an Amazon
-                    AWS EC2 instance. The front-end and button injection was made by using HTML, CSS, and JavaScript.
+                    The tool was created for a hackathon within a 24-hour constraint. It uses <mark>Echo3D</mark>'s JS SDK, and GPT-4 API via <mark>Node.js</mark> hosted on an Amazon
+                    <mark>AWS EC2</mark> instance. The front-end and button injection was made by using <mark>HTML</mark>, <mark>CSS</mark>, and <mark>JavaScript</mark>.
                   </p>
                   <div class="project-buttons">
+                    <a href="https://github.com/tommycbird/Readee" class="project-button">Source Code</a>
                     <a href="https://youtu.be/yqiPp7Mc8mQ" class="project-button">Demo Video</a>
                   </div>
                 </div>
@@ -160,9 +182,9 @@
               <!-- Art Placement -->
               <div class="project">
                 <div class="image-container">
-                  <img src="./src/img/portfolio-artplacement.png" alt="Project Image">
+                  <img src="./src/img/portfolio/portfolio-artplacement.png" alt="Project Image">
                   <div class="image-overlay">
-                    <a href="https://github.com/tommycbird/ArtPlacement" class="project-link">Source Code</a>
+                    <a class="project-img-text">Here is the output when placing 300 people via blue noise into the floorplan on the left. The areas marked green are the most visible wall-spaces (where you should place art), and the red are the least visible.</a>
                   </div>
                 </div>
                 <div class="project-details">
@@ -170,10 +192,11 @@
                   <p class="project-subtitle">C++ Program</p>
                   <p class="project-text">
                     This program takes in an input of a floorplan, and outputs a heatmap specifying where it is best to place art based on visibility.
-                    It uses the CGAL library to generate a Minkowski sum of the floorplan, then triangulates it using a constrained Delaunay triangulation algorithm.
+                    It uses the <mark class="tech-text">CGAL</mark> library to generate a Minkowski sum of the floorplan, then triangulates it using a constrained Delaunay triangulation algorithm.
                     It then uses raycasting to determine point visibility, with options for both white noise and blue noise placement.
                   </p>
                   <div class="project-buttons">
+                    <a href="https://github.com/tommycbird/ArtPlacement" class="project-button">Source Code</a>
                     <a href="/src/docs/artplacement.pdf" class="project-button">Research Paper</a>
                   </div>
                 </div>
@@ -182,21 +205,21 @@
               <!-- Daily Disc -->
               <div class="project">
                 <div class="image-container">
-                  <img src="./src/img/portfolio-dailydisc.png" alt="Project Image">
+                  <img src="./src/img/portfolio/portfolio-dailydisc.png" alt="Project Image">
                   <div class="image-overlay">
-                    <a href="https://tommybird.net" class="project-link">Demo Not Available</a>
+                    <a class="project-img-text">These are simply (outdated) screenshots of the gameplay, showcasing a birds-eye view of the randomly generated map, as well as the throwing mechanic on the disc.</a>
                   </div>
                 </div>
                 <div class="project-details">
                   <h3 class="project-title">Daily Disc</h3>
                   <p class="project-subtitle">Mobile Game</p>
                   <p class="project-text">
-                    Daily Disc is a mobile game I created in the Godot game engine. It boasts randomly generated maps, created using perlin noise.
+                    Daily Disc is a mobile game I created in the <mark>Godot</mark> game engine. It boasts randomly generated maps, created using perlin noise.
                     The game features a leaderboard system as well.
                     Each day, a daily course is given to all users, and players can compete to do better than their friends.
                   </p>
                   <div class="project-buttons">
-                    <a href="https://tommybird.net" class="project-button">Demo Unavailable</a>
+                    <a href=#portfolio class="project-button">Demo Unavailable</a>
                   </div>
                 </div>
               </div>
@@ -204,9 +227,9 @@
               <!-- RLOTMG  -->
               <div class="project">
                 <div class="image-container">
-                  <img src="./src/img/portfolio-rlotmg.jpg" alt="Project Image">
+                  <img src="./src/img/portfolio/portfolio-rlotmg.png" alt="Project Image">
                   <div class="image-overlay">
-                    <a href="/src/docs/rlotmg.pdf" class="project-link">Research Paper</a>
+                    <a class="project-img-text">Here you can see the three ML agents (a wizard, priest, and warrior) fighting the boss character.</a>
                   </div>
                 </div>
                 <div class="project-details">
@@ -214,11 +237,13 @@
                   <p class="project-subtitle">Cooperative Multi-Agent Reinforcement Learning System</p>
                   <p class="project-text">
                     RLOTMG is a demo that features cooperative multi-agent reinforcement learning in a 2D bullet hell game inspired
-                    by Realm of the Mad God. It was made using Unity and C#, and uses Unity's ML-Agents toolkit for training. There is
-                    also a research paper that goes into more detail about the project; this and a demo of the game can be found on
+                    by Realm of the Mad God. It was made using <mark>Unity</mark> and <mark>C#</mark> as well as <mark>PyTorch</mark>
+                    and <mark>Tensorflow</mark> via Unity's ML-Agents toolkit for training. There is
+                    also a research paper that goes into more detail about the project; also a demo can be found on
                     repository's github page linked below.
                   </p>
                   <div class="project-buttons">
+                    <a href="/src/docs/rlotmg.pdf" class="project-button">Research Paper</a>
                     <a href="https://www.canva.com/design/DAFgY_Ula8w/XO8XMdBG1ccZxRRXKtGeYQ/edit?utm_content=DAFgY_Ula8w&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" class="project-button">Demonstration</a>
                   </div>
                 </div>
@@ -227,9 +252,9 @@
               <!-- Vieworthy  -->
               <div class="project">
                 <div class="image-container">
-                  <img src="./src/img/portfolio-vieworthy.png" alt="Project Image">
+                  <img src="./src/img/portfolio/portfolio-vieworthy.png" alt="Project Image">
                   <div class="image-overlay">
-                    <a href="https://github.com/tommycbird/Vieworthy" class="project-link">Source Code</a>
+                    <a class="project-img-text">This image shows an example conversation with the tool, wherein the user is asking questions about the input video. The quality score is displayed in the left, denoting how well received and not click-bait the video is out of 10.</a>
                   </div>
                 </div>
                 <div class="project-details">
@@ -238,9 +263,10 @@
                   <p class="project-text">
                     Vieworthy is an AI-powered video curation website and Chrome extension that analyzes video data evaluate quality
                     and provide users with video summaries. It is capable of web scraping for Youtube videos, and processed said data to query an LLM API
-                    where a description is generated. It was made using Node.js, OpenAI's GPT-3.5 API, and Google's Youtube Data API.
+                    where a description is generated. It was made using Node.js, OpenAI's <mark>GPT-3.5 API</mark>, and Google's <mark>Youtube Data API</mark>.
                   </p>
                   <div class="project-buttons">
+                    <a href="https://github.com/tommycbird/Vieworthy" class="project-button">Source Code</a>
                     <a href="https://vieworthy.com" class="project-button">Visit Website</a>
                   </div>
                 </div>
@@ -249,9 +275,9 @@
               <!-- Path Pilot -->
               <div class="project">
                 <div class="image-container">
-                  <img src="./src/img/portfolio-rundom.png" alt="Project Image">
+                  <img src="./src/img/portfolio/portfolio-rundom.png" alt="Project Image">
                   <div class="image-overlay">
-                    <a href="https://docs.google.com/presentation/d/1x8h8MtTg71yWAEELGRANDa4BQQLx17N-hIY57qIPYWs/edit?usp=sharing" class="project-link">Show Demo</a>
+                    <a class="project-img-text">This is very outdated image showing early developmental screenshots of the social media, route generation, and profile interfaces of the app.</a>
                   </div>
                 </div>
                 <div class="project-details">
@@ -259,8 +285,8 @@
                   <p class="project-subtitle">iOS Application</p>
                   <p class="project-text">
                     Path Pilot is a fitness-based iOS Application that displays randomly generated routes for runners.
-                    It does so using Apple Maps API, and was made using SwiftUI, with an updating database hosted on Firebase.
-                    This project is still in development, and I hope to release it soon.
+                    Made with <mark>SwiftUI</mark>, it uses the <mark>Mapbox API</mark> with an updating database hosted on <mark>Firebase</mark>.
+                    This project is still in development.
                   </p>
                   <div class="project-buttons">
                     <a href="https://docs.google.com/presentation/d/1x8h8MtTg71yWAEELGRANDa4BQQLx17N-hIY57qIPYWs/edit?usp=sharing" class="project-button">Show Demo</a>
@@ -271,9 +297,9 @@
               <!-- Troy Green Spaces -->
               <div class="project">
                 <div class="image-container">
-                  <img src="./src/img/portfolio-troygreenspaces.jpg" alt="Project Image">
+                  <img src="./src/img/portfolio/portfolio-troygreenspaces.jpg" alt="Project Image">
                   <div class="image-overlay">
-                    <a href="https://www.troygreenspaces.com" class="project-link">Visit Page</a>
+                    <a class="project-img-text">This is the homepage, not much to it other than it shows green-spaces in Troy. Useful for finding a good picnic spot.</a>
                   </div>
                 </div>
                 <div class="project-details">
@@ -282,7 +308,7 @@
                   <p class="project-text">
                     Troy Green Spaces is a website that displays an interactable map of Troy, NY with a list of all its green spaces.
                     This project was done with an environmental science student at a nearby school based on her research.
-                    It was made using HTML, CSS, JavaScript, and Leaflet.js, and is hosted on GitHub Pages. GIS data is fetched from
+                    It was made using <mark>HTML</mark>, <mark>CSS</mark>, <mark>JavaScript</mark>, and <mark>Leaflet.js</mark>. GIS data is fetched from
                     the City of Troy's open data portal.
                   </p>
                   <div class="project-buttons">
@@ -294,20 +320,20 @@
               <!-- A-Star Unity -->
               <div class="project">
                 <div class="image-container">
-                  <img src="./src/img/portfolio-astar.jpg" alt="Project Image">
+                  <img src="./src/img/portfolio/portfolio-astar.jpg" alt="Project Image">
                   <div class="image-overlay">
-                    <a href="https://play.unity.com/mg/other/webgl-kfo-1" class="project-link">Play</a>
+                    <a class="project-img-text">This screenshot shows the level map (green is valid tiles, blue is water), as well as all the waypoint nodes (dots). After selecting two dots, an optimal path will be found between them, marked in yellow (dots marked red were those explored in the process).</a>
                   </div>
                 </div>
                 <div class="project-details">
                   <h3 class="project-title">A* Pathfinding in Dragon Age</h3>
                   <p class="project-subtitle">Unity Demo</p>
                   <p class="project-text">
-                    This is a Unity demo that uses the A* Search and Bressenham's line algorithm for pathfinding on maps from the series "Dragon Age."
+                    This is a Unity demo that uses the <mark>A* Search</mark> and <mark>Bressenham's line algorithms</mark> for pathfinding on maps from the series "Dragon Age."
                     It allows you to choose a map, a heuristic, a waypoint representation, and any two points.
                   </p>
                   <div class="project-buttons">
-                    <a href="https://play.unity.com/mg/other/webgl-kfo-1" class="project-button">Try Demo</a>
+                    <a href="https://play.unity.com/mg/other/webgl-kfo-1" class="project-button">Run Demo</a>
                   </div>
                 </div>
             </div>
@@ -315,17 +341,17 @@
               <!-- Astromath -->
                 <div class="project">
                   <div class="image-container">
-                    <img src="./src/img/portfolio-astromath.jpg" alt="Project Image">
+                    <img src="./src/img/portfolio/portfolio-astromath.jpg" alt="Project Image">
                     <div class="image-overlay">
-                      <a href="https://github.com/Simon-Sandrew/astromath" class="project-link">Source Code</a>
+                      <a class="project-img-text">This is a gameplay screenshot, you type the answer to the question and your score (as well as the question difficulty) increases. It's space themed because that was a bonus category in the Hackathon. Unfortunately we didn't win anything because the version we turned in rendered like 20 planet gifs all animated at the same time and it'd totally fry your computer - whoops.</a>
                     </div>
                   </div>
                   <div class="project-details">
                     <h3 class="project-title">Astromath</h3>
                     <p class="project-subtitle">Webgame</p>
                     <p class="project-text">
-                     This is a simple webgame myself and some peers made using HTML, CSS, and JavaScript.
-                     It was made for a Hackathon, and was created within a 1-day constraint.
+                     This is a simple webgame myself and some peers made using <mark>HTML</mark>, <mark>CSS</mark>, and <mark>JavaScript</mark>.
+                     It was made for a Hackathon, and was created within a 24-hr constraint.
                     </p>
                     <div class="project-buttons">
                       <a href="https://github.com/Simon-Sandrew/astromath" class="project-button">Source Code</a>
@@ -333,19 +359,22 @@
                   </div> 
               </div>
 
+
+
+
               <!-- tommybird.net -->
               <div class="project">
                 <div class="image-container">
-                  <img src="./src/img/portfolio-birdev.jpg" alt="Project Image">
+                  <img src="./src/img/portfolio/portfolio-birdev.png" alt="Project Image">
                   <div class="image-overlay">
-                    <a href="https://github.com/tommycbird/tommybird.net" class="project-link">Source Code</a>
+                    <a class="project-img-text">You're quite literally viewing the code for this particular section in the page right here.</a>
                   </div>
                 </div>
                 <div class="project-details">
                   <h3 class="project-title">This Website</h3>
                   <p class="project-subtitle">Website</p>
                   <p class="project-text">
-                    This website was made using HTML, CSS, and JavaScript. 
+                    This website was made using <mark>HTML</mark>, <mark>CSS</mark>, and <mark>JavaScript</mark>. 
                     It is hosted on GitHub Pages, and the source code can be found below.
                   </p>
                   <div class="project-buttons">
@@ -353,6 +382,10 @@
                  </div>
                 </div>
               </div>
+              
+
+
+
               
             </div>
           </div>
