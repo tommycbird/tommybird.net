@@ -225,6 +225,9 @@ mark {
   margin-bottom: 8px;
 }
 
+.nav-toggle-btn { display: none; }
+
+
 .header.active{
   background-color: var(--bg);
 }
@@ -246,24 +249,17 @@ mark {
     font-size: 3rem;
   }
   
-  .nav-toggle-btn { font-size: 3rem; }
-  
-  .nav-toggle-btn .close-icon,
-  .nav-toggle-btn.active .menu-icon { display: none; }
-  
-  .nav-toggle-btn.active .close-icon,
-  .nav-toggle-btn .menu-icon { display: block; }
 
   .navbar {
-    position: absolute;
-    top: 65px;
-    left: 0;
-    width: 100%;
-    padding-inline: 30px;
-    visibility: hidden;
-    opacity: 0;
-    transition: var(--transition-2);
+    display: flex; 
+    flex-direction: row; 
+    justify-content: center; 
+    align-items: center; 
+    width: 100%; 
+    visibility: visible;
+    opacity: 1;
   }
+  
   
   .header.nav-active .navbar {
     visibility: visible;
@@ -575,24 +571,58 @@ mark {
     font-size: 2.0rem;
   }
 
+
+  .navbar {
+    display: flex;
+    flex-direction: row; 
+    align-items: center; 
+    position: static; 
+    width: auto; 
+    opacity: 1;
+    order: 1;
+  }
+
+  .navbar-list {
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+    padding-top: 10px;
+  }
+
+  .navbar-link {
+    padding: 10px;
+  }
+
+  header.nav-active .navbar {
+    visibility: visible;
+    opacity: 1;
+    display: flex; 
+    flex-direction: row;
+    justify-content: center; 
+    align-items: center;
+  }
+  
   .header.nav-active{
     background-color: var(--bg);
   }
 
   .logo {
     font-size: 25px;
+    padding-top: 10px;
   }
 
   .navbar-item {
-    font-size: 15px;
+    font-size: 17px;
+    padding-left: 5px;
   }
 
   .navbar .btn {
-    font-size: 15px;
-    padding-left: 8px;
-    padding-right: 8px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    font-size: 17px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    margin-top: 4px;
   }
 
   .header {
@@ -718,8 +748,6 @@ mark {
   }
 
   /* HEADER */
-
-  .nav-toggle-btn { display: none; }
 
   .header,
   .header.nav-active {
