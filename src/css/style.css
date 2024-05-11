@@ -611,6 +611,12 @@ mark {
     padding-top: 10px;
   }
 
+  .logo-img {
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+  }
+
   .navbar-item {
     font-size: 17px;
     padding-left: 5px;
