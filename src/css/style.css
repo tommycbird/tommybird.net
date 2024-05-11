@@ -609,6 +609,8 @@ mark {
   .logo {
     font-size: 25px;
     padding-top: 10px;
+    text-wrap: nowrap;
+    flex-shrink: 1;
   }
 
   .logo-img {
