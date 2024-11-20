@@ -34,3 +34,32 @@ window.addEventListener("scroll", function () {
     backTopBtn.classList.remove("active");
   }
 });
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  const tabButtons = document.querySelectorAll('.tab-button');
+  const tabContents = document.querySelectorAll('.tab-content');
+
+  tabButtons.forEach(function(button) {
+    button.addEventListener('click', function() {
+      // Remove active class from all buttons
+      tabButtons.forEach(function(btn) {
+        btn.classList.remove('active');
+      });
+      // Add active class to the clicked button
+      this.classList.add('active');
+
+      // Get the target tab
+      const tab = this.getAttribute('data-tab');
+
+      // Show/hide tab contents using the 'hidden' class
+      tabContents.forEach(function(content) {
+        if (content.id === tab) {
+          content.classList.remove('hidden');
+        } else {
+          content.classList.add('hidden');
+        }
+      });
+    });
+  });
+});

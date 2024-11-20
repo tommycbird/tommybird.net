@@ -377,12 +377,6 @@ mark {
 
 .portfolio{ background-color: var(--bg);}
 
-.portfolio-list {
-  display: flex;
-  flex-direction: column;
-  gap: 60px;
-}
-
 .project {
   display: flex;
   align-items: center;
@@ -486,6 +480,44 @@ mark {
 
 .project:nth-child(even) .project-details {
   order: 1;
+}
+
+/* Tab Selector Styles */
+.tab-selector {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.tab-button {
+  background-color: var(--bg2);
+  color: var(--txt1);
+  border: none;
+  padding: 8px 20px;
+  cursor: pointer;
+  font-size: var(--fs-5);
+  font-family: var(--ff-barlow);
+  transition: var(--transition-2);
+  margin: 0 5px;
+  border-radius: var(--radius-5);
+}
+
+.tab-button.active,
+.tab-button:hover {
+  background-color: var(--btn);
+}
+
+.tab-content:n{
+  display: flex;
+  flex-direction: column;
+}
+
+.tab-content > *:not(:first-child) {
+  margin-top: 60px;
+}
+
+.hidden {
+  display: none;
 }
 
 
