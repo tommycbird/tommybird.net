@@ -773,7 +773,7 @@ mark {
   /* REUSED STYLE */
 
   .container {
-    max-width: 1050px;
+    max-width: 1280px;
     margin-inline: auto;
   }
 
@@ -821,6 +821,7 @@ mark {
     display: grid;
     grid-template-columns: 1.2fr 1fr;
     align-items: center;
+    column-gap: 100px;
   }
 
   .hero-content { text-align: left; }
