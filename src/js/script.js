@@ -53,30 +53,32 @@ fetch('src/dat/projects.json')
   .then(res => res.json())
   .then(projects => {
     const tabs = { programming: '#programming', 'game-dev': '#game-dev', art: '#art' };
-    projects.forEach(p => {
-      const container = document.querySelector(tabs[p.tab]);
+    Object.keys(projects).forEach(tab => {
+      const container = document.querySelector(tabs[tab]);
       if (!container) return;
 
-      const overlayHtml = p.overlay ? `
-        <div class="image-overlay">
-          <a class="project-img-text">${p.overlay}</a>
-        </div>` : '';
+      projects[tab].forEach(p => {
+        const overlayHtml = p.overlay ? `
+          <div class="image-overlay">
+            <a class="project-img-text">${p.overlay}</a>
+          </div>` : '';
 
-      const html = `
-        <div class="project">
-          <div class="image-container">
-            <img loading="lazy" src="${p.img}" alt="${p.title}">
-            ${overlayHtml}
-          </div>
-          <div class="project-details">
-            <h3 class="project-title">${p.title}</h3>
-            <p class="project-subtitle">${p.subtitle}</p>
-            <p class="project-text">${p.desc || ''}</p>
-            <div class="project-buttons">
-              ${(p.links || []).map(l => `<a href="${l.href}" class="project-button">${l.label}</a>`).join('')}
+        const html = `
+          <div class="project">
+            <div class="image-container">
+              <img loading="lazy" src="${p.img}" alt="${p.title}">
+              ${overlayHtml}
             </div>
-          </div>
-        </div>`;
-      container.insertAdjacentHTML('beforeend', html);
+            <div class="project-details">
+              <h3 class="project-title">${p.title}</h3>
+              <p class="project-subtitle">${p.subtitle}</p>
+              <p class="project-text">${p.desc || ''}</p>
+              <div class="project-buttons">
+                ${(p.links || []).map(l => `<a href="${l.href}" class="project-button">${l.label}</a>`).join('')}
+              </div>
+            </div>
+          </div>`;
+        container.insertAdjacentHTML('beforeend', html);
+      });
     });
   });

@@ -1,195 +1,185 @@
-[
-  {
-    "id": "image-blender",
-    "title": "Image Blender",
-    "subtitle": "Python Computer Vision Program",
-    "desc": "If you have multiple images of the same scene taken at different angles and/or positions, this program will blend any number of them together, creating a higher resolution image. This was achieved with computer vision techniques such as <mark>SIFT</mark>, Flann-based matching, RANSAC, and a good bit of matrix algebra on homography/fundamental matrices. It was made in <mark>Python</mark>, leveraging the <mark>OpenCV</mark> and <mark>NumPy</mark> libraries.",
-    "img": "src/img/portfolio/portfolio-img-blender.png",
-    "overlay": "On the left are the two input images. On the right they are fused together at matching points.",
-    "links": [
-      { "label": "Source Code", "href": "https://github.com/tommycbird/ImageBlender" }
-    ],
-    "tab": "programming"
-  },
-  {
-    "id": "readee",
-    "title": "Readee",
-    "subtitle": "Chrome Extension",
-    "desc": "Readee addresses a fundamental challenge in online learning and reading comprehension: the difficulty of visualizing and understanding complex terms and concepts. The tool was created for a hackathon within a 24-hour constraint. It uses <mark>Echo3D</mark>'s JS SDK, and GPT-4 API via <mark>Node.js</mark> hosted on an <mark>AWS EC2</mark> instance. The front-end and button injection was made by using <mark>HTML</mark>, <mark>CSS</mark>, and <mark>JavaScript</mark>.",
-    "img": "src/img/portfolio/portfolio-readee.png",
-    "overlay": "After selecting the term \"Arctic Fox,\" the extension displays an AI-generated contextual definition (left), as well as an interactable 3D model of the fox (right).",
-    "links": [
-      { "label": "Source Code", "href": "https://github.com/tommycbird/Readee" },
-      { "label": "Demo Video", "href": "https://youtu.be/yqiPp7Mc8mQ" }
-    ],
-    "tab": "programming"
-  },
-  {
-    "id": "art-optimizer",
-    "title": "Art Optimizer",
-    "subtitle": "C++ Program",
-    "desc": "This program takes in an input of a floorplan, and outputs a heatmap specifying where it is best to place art based on visibility. It uses the <mark class=\"tech-text\">CGAL</mark> library to generate a Minkowski sum of the floorplan, then triangulates it using a constrained Delaunay triangulation algorithm. It then uses raycasting to determine point visibility, with options for both white noise and blue noise placement.",
-    "img": "src/img/portfolio/portfolio-artplacement.png",
-    "overlay": "Here is the output when placing 300 people via blue noise into the floorplan on the left. The areas marked green are the most visible wall-spaces (where you should place art), and the red are the least visible.",
-    "links": [
-      { "label": "Source Code", "href": "https://github.com/tommycbird/ArtPlacement" },
-      { "label": "Research Paper", "href": "/src/docs/artplacement.pdf" }
-    ],
-    "tab": "programming"
-  },
-  {
-    "id": "sipsmrt",
-    "title": "SipSmrt",
-    "subtitle": "Mobile App",
-    "desc": "SipSmrt is a hydration tracker for iOS and Android built in <mark>React Native</mark> and <mark>Expo Router</mark>. It uses <mark>Supabase</mark> for user authentication and data storage. The project has won first place in the Albany region for the New York State Business Plan Competition's product track. It is currently in development to pair with our smart boot product using <mark>Bluetooth Low Energy</mark>, which can be attached to any water bottle to automatically track hydration by weight change.",
-    "img": "src/img/portfolio/portfolio-sipsmrt.png",
-    "overlay": "This is a screenshot of the app's stats screen and main screen, where you can see the user's current hydration.",
-    "links": [
-      { "label": "Visit Website", "href": "https://sipsmrt.com" }
-    ],
-    "tab": "programming"
-  },
-  {
-    "id": "vieworthy",
-    "title": "Vieworthy",
-    "subtitle": "AI Video Curator",
-    "desc": "Vieworthy is an AI-powered video curation website and Chrome extension that analyzes video data evaluate quality and provide users with video summaries. It is capable of web scraping for Youtube videos, and processed said data to query an LLM API where a description is generated. It was made using Node.js, OpenAI's <mark>GPT-3.5 API</mark>, and Google's <mark>Youtube Data API</mark>.",
-    "img": "src/img/portfolio/portfolio-vieworthy.png",
-    "overlay": "This image shows an example conversation with the tool, wherein the user is asking questions about the input video. The quality score is displayed in the left, denoting how well received and not click-bait the video is out of 10.",
-    "links": [
-      { "label": "Source Code", "href": "https://github.com/tommycbird/Vieworthy" },
-      { "label": "Visit Website", "href": "https://vieworthy.com" }
-    ],
-    "tab": "programming"
-  },
-  {
-    "id": "path-pilot",
-    "title": "Path Pilot",
-    "subtitle": "iOS Application",
-    "desc": "Path Pilot is a fitness-based iOS Application that displays randomly generated routes for runners. Made with <mark>SwiftUI</mark>, it uses the <mark>Mapbox API</mark> with an updating database hosted on <mark>Firebase</mark>. This project is still in development.",
-    "img": "src/img/portfolio/portfolio-rundom.png",
-    "overlay": "This is very outdated image showing early developmental screenshots of the social media, route generation, and profile interfaces of the app.",
-    "links": [
-      { "label": "Show Demo", "href": "https://docs.google.com/presentation/d/1x8h8MtTg71yWAEELGRANDa4BQQLx17N-hIY57qIPYWs/edit?usp=sharing" }
-    ],
-    "tab": "programming"
-  },
-  {
-    "id": "troy-green-spaces",
-    "title": "Troy Green Spaces",
-    "subtitle": "Website",
-    "desc": "Troy Green Spaces is a website that displays an interactable map of Troy, NY with a list of all its green spaces. This project was done with an environmental science student at a nearby school based on her research. It was made using <mark>HTML</mark>, <mark>CSS</mark>, <mark>JavaScript</mark>, and <mark>Leaflet.js</mark>. GIS data is fetched from the City of Troy's open data portal.",
-    "img": "src/img/portfolio/portfolio-troygreenspaces.jpg",
-    "overlay": "This is the homepage, not much to it other than it shows green-spaces in Troy. Useful for finding a good picnic spot.",
-    "links": [
-      { "label": "Visit Page", "href": "https://www.troygreenspaces.com" }
-    ],
-    "tab": "programming"
-  },
-  {
-    "id": "astromath",
-    "title": "Astromath",
-    "subtitle": "Webgame",
-    "desc": "This is a simple webgame myself and some peers made using <mark>HTML</mark>, <mark>CSS</mark>, and <mark>JavaScript</mark>. It was made for a Hackathon, and was created within a 24-hr constraint.",
-    "img": "src/img/portfolio/portfolio-astromath.jpg",
-    "overlay": "This is a gameplay screenshot, you type the answer to the question and your score (as well as the question difficulty) increases. It's space themed because that was a bonus category in the Hackathon. Unfortunately we didn't win anything because the version we turned in rendered like 20 planet gifs all animated at the same time and it'd totally fry your computer - whoops.",
-    "links": [
-      { "label": "Source Code", "href": "https://github.com/Simon-Sandrew/astromath" }
-    ],
-    "tab": "programming"
-  },
-  {
-    "id": "tommybird-site",
-    "title": "This Website",
-    "subtitle": "Website",
-    "desc": "This website was made using <mark>HTML</mark>, <mark>CSS</mark>, and <mark>JavaScript</mark>. It is hosted on GitHub Pages, and the source code can be found below.",
-    "img": "src/img/portfolio/portfolio-birdev.png",
-    "overlay": "You're quite literally viewing the code for this particular section in the page right here.",
-    "links": [
-      { "label": "Source Code", "href": "https://github.com/tommycbird/tommybird.net" }
-    ],
-    "tab": "programming"
-  },
-  {
-    "id": "daily-disc",
-    "title": "Daily Disc",
-    "subtitle": "Video Game",
-    "desc": "Daily Disc is a desktop / mobile game I created in the <mark>Godot</mark> game engine. It boasts randomly generated maps, created using perlin noise. The game features a leaderboard system as well. Each day, a daily course is given to all users, and players can compete to do better than their friends.",
-    "img": "src/img/portfolio/portfolio-dailydisc.png",
-    "overlay": "These are simply (outdated) screenshots of the gameplay, showcasing a birds-eye view of the randomly generated map, as well as the throwing mechanic on the disc.",
-    "links": [
-      { "label": "Demo Unavailable", "href": "#portfolio" }
-    ],
-    "tab": "game-dev"
-  },
-  {
-    "id": "rlotmg",
-    "title": "RLOTMG",
-    "subtitle": "Cooperative Multi-Agent Reinforcement Learning System",
-    "desc": "RLOTMG is a demo that features cooperative multi-agent reinforcement learning in a 2D bullet hell game inspired by Realm of the Mad God. It was made using <mark>Unity</mark> and <mark>C#</mark> as well as <mark>PyTorch</mark> and <mark>Tensorflow</mark> via Unity's ML-Agents toolkit for training. There is also a research paper that goes into more detail about the project; also a demo can be found on repository's github page linked below.",
-    "img": "src/img/portfolio/portfolio-rlotmg.png",
-    "overlay": "Here you can see the three ML agents (a wizard, priest, and warrior) fighting the boss character.",
-    "links": [
-      { "label": "Research Paper", "href": "/src/docs/rlotmg.pdf" },
-      { "label": "Demonstration", "href": "https://www.canva.com/design/DAFgY_Ula8w/XO8XMdBG1ccZxRRXKtGeYQ/edit?utm_content=DAFgY_Ula8w&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" }
-    ],
-    "tab": "game-dev"
-  },
-  {
-    "id": "astar-dragonage",
-    "title": "A* Pathfinding in Dragon Age",
-    "subtitle": "Unity Demo",
-    "desc": "This is a Unity demo that uses the <mark>A* Search</mark> and <mark>Bressenham's line algorithms</mark> for pathfinding on maps from the series \"Dragon Age.\" It allows you to choose a map, a heuristic, a waypoint representation, and any two points.",
-    "img": "src/img/portfolio/portfolio-astar.jpg",
-    "overlay": "This screenshot shows the level map (green is valid tiles, blue is water), as well as all the waypoint nodes (dots). After selecting two dots, an optimal path will be found between them, marked in yellow (dots marked red were those explored in the process).",
-    "links": [
-      { "label": "Run Demo", "href": "https://play.unity.com/mg/other/webgl-kfo-1" }
-    ],
-    "tab": "game-dev"
-  },
-  {
-    "id": "formal-focus",
-    "title": "Formal Focus",
-    "subtitle": "Coffee Table Book",
-    "desc": "This is a coffee table book that illustrates a few, key design elements present in graphic design. It was made using <mark>Adobe Illustrator</mark>, <mark>Photoshop</mark>, and <mark>InDesign</mark>.",
-    "img": "src/img/portfolio/portfolio-formalfocus.png",
-    "overlay": "Front cover of the book",
-    "links": [
-      { "label": "Mockup", "href": "/src/docs/ff_mock.pdf" },
-      { "label": "Spreads", "href": "/src/docs/ff_spreads.pdf" }
-    ],
-    "tab": "art"
-  },
-  {
-    "id": "berberis",
-    "title": "Berberis",
-    "subtitle": "Logo Design",
-    "desc": "This is a logo I made for a fictional company, Berberis, that sells wine only by the barrel. I made it using <mark>Adobe Illustrator</mark> and <mark>Photoshop</mark>.",
-    "img": "src/img/portfolio/portfolio-berberis.png",
-    "overlay": "The logo and a mockup render of it.",
-    "links": [],
-    "tab": "art"
-  },
-  {
-    "id": "dead-in-the-water",
-    "title": "Dead in the Water",
-    "subtitle": "Grunge Concert Poster",
-    "desc": "This is a grunge-style concert poster I made for a fictional music festival, Dead in the Water. The full version & mockups are visible below. I made it using <mark>Adobe Illustrator</mark>.",
-    "img": "src/img/portfolio/portfolio-ditw.png",
-    "overlay": "This is a cropped version of the full poster",
-    "links": [
-      { "label": "Slides", "href": "/src/docs/deadinthewater.pdf" }
-    ],
-    "tab": "art"
-  },
-  {
-    "id": "sip-smrt-renders",
-    "title": "Smart Boot Renders",
-    "subtitle": "3D Models",
-    "desc": "These are 3D renders made in <mark>Blender</mark> of the SipSmrt smart boot product.",
-    "img": "src/img/portfolio/portfolio-siprenders.png",
-    "overlay": "Bottle mockup and the boot rendering",
-    "links": [],
-    "tab": "art"
-  }
-]
+{
+  "programming": [
+    {
+      "id": "image-blender",
+      "title": "Image Blender",
+      "subtitle": "Python Computer Vision Program",
+      "desc": "If you have multiple images of the same scene taken at different angles and/or positions, this program will blend any number of them together, creating a higher resolution image. This was achieved with computer vision techniques such as <mark>SIFT</mark>, Flann-based matching, RANSAC, and a good bit of matrix algebra on homography/fundamental matrices. It was made in <mark>Python</mark>, leveraging the <mark>OpenCV</mark> and <mark>NumPy</mark> libraries.",
+      "img": "src/img/portfolio/portfolio-img-blender.png",
+      "overlay": "On the left are the two input images. On the right they are fused together at matching points.",
+      "links": [
+        { "label": "Source Code", "href": "https://github.com/tommycbird/ImageBlender" }
+      ]
+    },
+    {
+      "id": "readee",
+      "title": "Readee",
+      "subtitle": "Chrome Extension",
+      "desc": "Readee addresses a fundamental challenge in online learning and reading comprehension: the difficulty of visualizing and understanding complex terms and concepts. The tool was created for a hackathon within a 24-hour constraint. It uses <mark>Echo3D</mark>'s JS SDK, and GPT-4 API via <mark>Node.js</mark> hosted on an <mark>AWS EC2</mark> instance. The front-end and button injection was made by using <mark>HTML</mark>, <mark>CSS</mark>, and <mark>JavaScript</mark>.",
+      "img": "src/img/portfolio/portfolio-readee.png",
+      "overlay": "After selecting the term \"Arctic Fox,\" the extension displays an AI-generated contextual definition (left), as well as an interactable 3D model of the fox (right).",
+      "links": [
+        { "label": "Source Code", "href": "https://github.com/tommycbird/Readee" },
+        { "label": "Demo Video", "href": "https://youtu.be/yqiPp7Mc8mQ" }
+      ]
+    },
+    {
+      "id": "art-optimizer",
+      "title": "Art Optimizer",
+      "subtitle": "C++ Program",
+      "desc": "This program takes in an input of a floorplan, and outputs a heatmap specifying where it is best to place art based on visibility. It uses the <mark class=\"tech-text\">CGAL</mark> library to generate a Minkowski sum of the floorplan, then triangulates it using a constrained Delaunay triangulation algorithm. It then uses raycasting to determine point visibility, with options for both white noise and blue noise placement.",
+      "img": "src/img/portfolio/portfolio-artplacement.png",
+      "overlay": "Here is the output when placing 300 people via blue noise into the floorplan on the left. The areas marked green are the most visible wall-spaces (where you should place art), and the red are the least visible.",
+      "links": [
+        { "label": "Source Code", "href": "https://github.com/tommycbird/ArtPlacement" },
+        { "label": "Research Paper", "href": "/src/docs/artplacement.pdf" }
+      ]
+    },
+    {
+      "id": "sipsmrt",
+      "title": "SipSmrt",
+      "subtitle": "Mobile App",
+      "desc": "SipSmrt is a hydration tracker for iOS and Android built in <mark>React Native</mark> and <mark>Expo Router</mark>. It uses <mark>Supabase</mark> for user authentication and data storage. The project has won first place in the Albany region for the New York State Business Plan Competition's product track. It is currently in development to pair with our smart boot product using <mark>Bluetooth Low Energy</mark>, which can be attached to any water bottle to automatically track hydration by weight change.",
+      "img": "src/img/portfolio/portfolio-sipsmrt.png",
+      "overlay": "This is a screenshot of the app's stats screen and main screen, where you can see the user's current hydration.",
+      "links": [
+        { "label": "Visit Website", "href": "https://sipsmrt.com" }
+      ]
+    },
+    {
+      "id": "vieworthy",
+      "title": "Vieworthy",
+      "subtitle": "AI Video Curator",
+      "desc": "Vieworthy is an AI-powered video curation website and Chrome extension that analyzes video data evaluate quality and provide users with video summaries. It is capable of web scraping for Youtube videos, and processed said data to query an LLM API where a description is generated. It was made using Node.js, OpenAI's <mark>GPT-3.5 API</mark>, and Google's <mark>Youtube Data API</mark>.",
+      "img": "src/img/portfolio/portfolio-vieworthy.png",
+      "overlay": "This image shows an example conversation with the tool, wherein the user is asking questions about the input video. The quality score is displayed in the left, denoting how well received and not click-bait the video is out of 10.",
+      "links": [
+        { "label": "Source Code", "href": "https://github.com/tommycbird/Vieworthy" },
+        { "label": "Visit Website", "href": "https://vieworthy.com" }
+      ]
+    },
+    {
+      "id": "path-pilot",
+      "title": "Path Pilot",
+      "subtitle": "iOS Application",
+      "desc": "Path Pilot is a fitness-based iOS Application that displays randomly generated routes for runners. Made with <mark>SwiftUI</mark>, it uses the <mark>Mapbox API</mark> with an updating database hosted on <mark>Firebase</mark>. This project is still in development.",
+      "img": "src/img/portfolio/portfolio-rundom.png",
+      "overlay": "This is very outdated image showing early developmental screenshots of the social media, route generation, and profile interfaces of the app.",
+      "links": [
+        { "label": "Show Demo", "href": "https://docs.google.com/presentation/d/1x8h8MtTg71yWAEELGRANDa4BQQLx17N-hIY57qIPYWs/edit?usp=sharing" }
+      ]
+    },
+    {
+      "id": "troy-green-spaces",
+      "title": "Troy Green Spaces",
+      "subtitle": "Website",
+      "desc": "Troy Green Spaces is a website that displays an interactable map of Troy, NY with a list of all its green spaces. This project was done with an environmental science student at a nearby school based on her research. It was made using <mark>HTML</mark>, <mark>CSS</mark>, <mark>JavaScript</mark>, and <mark>Leaflet.js</mark>. GIS data is fetched from the City of Troy's open data portal.",
+      "img": "src/img/portfolio/portfolio-troygreenspaces.jpg",
+      "overlay": "This is the homepage, not much to it other than it shows green-spaces in Troy. Useful for finding a good picnic spot.",
+      "links": [
+        { "label": "Visit Page", "href": "https://www.troygreenspaces.com" }
+      ]
+    },
+    {
+      "id": "astromath",
+      "title": "Astromath",
+      "subtitle": "Webgame",
+      "desc": "This is a simple webgame myself and some peers made using <mark>HTML</mark>, <mark>CSS</mark>, and <mark>JavaScript</mark>. It was made for a Hackathon, and was created within a 24-hr constraint.",
+      "img": "src/img/portfolio/portfolio-astromath.jpg",
+      "overlay": "This is a gameplay screenshot, you type the answer to the question and your score (as well as the question difficulty) increases. It's space themed because that was a bonus category in the Hackathon. Unfortunately we didn't win anything because the version we turned in rendered like 20 planet gifs all animated at the same time and it'd totally fry your computer - whoops.",
+      "links": [
+        { "label": "Source Code", "href": "https://github.com/Simon-Sandrew/astromath" }
+      ]
+    },
+    {
+      "id": "tommybird-site",
+      "title": "This Website",
+      "subtitle": "Website",
+      "desc": "This website was made using <mark>HTML</mark>, <mark>CSS</mark>, and <mark>JavaScript</mark>. It is hosted on GitHub Pages, and the source code can be found below.",
+      "img": "src/img/portfolio/portfolio-birdev.png",
+      "overlay": "You're quite literally viewing the code for this particular section in the page right here.",
+      "links": [
+        { "label": "Source Code", "href": "https://github.com/tommycbird/tommybird.net" }
+      ]
+    }
+  ],
+  "game-dev": [
+    {
+      "id": "daily-disc",
+      "title": "Daily Disc",
+      "subtitle": "Video Game",
+      "desc": "Daily Disc is a desktop / mobile game I created in the <mark>Godot</mark> game engine. It boasts randomly generated maps, created using perlin noise. The game features a leaderboard system as well. Each day, a daily course is given to all users, and players can compete to do better than their friends.",
+      "img": "src/img/portfolio/portfolio-dailydisc.png",
+      "overlay": "These are simply (outdated) screenshots of the gameplay, showcasing a birds-eye view of the randomly generated map, as well as the throwing mechanic on the disc.",
+      "links": [
+        { "label": "Demo Unavailable", "href": "#portfolio" }
+      ]
+    },
+    {
+      "id": "rlotmg",
+      "title": "RLOTMG",
+      "subtitle": "Cooperative Multi-Agent Reinforcement Learning System",
+      "desc": "RLOTMG is a demo that features cooperative multi-agent reinforcement learning in a 2D bullet hell game inspired by Realm of the Mad God. It was made using <mark>Unity</mark> and <mark>C#</mark> as well as <mark>PyTorch</mark> and <mark>Tensorflow</mark> via Unity's ML-Agents toolkit for training. There is also a research paper that goes into more detail about the project; also a demo can be found on repository's github page linked below.",
+      "img": "src/img/portfolio/portfolio-rlotmg.png",
+      "overlay": "Here you can see the three ML agents (a wizard, priest, and warrior) fighting the boss character.",
+      "links": [
+        { "label": "Research Paper", "href": "/src/docs/rlotmg.pdf" },
+        { "label": "Demonstration", "href": "https://www.canva.com/design/DAFgY_Ula8w/XO8XMdBG1ccZxRRXKtGeYQ/edit?utm_content=DAFgY_Ula8w&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" }
+      ]
+    },
+    {
+      "id": "astar-dragonage",
+      "title": "A* Pathfinding in Dragon Age",
+      "subtitle": "Unity Demo",
+      "desc": "This is a Unity demo that uses the <mark>A* Search</mark> and <mark>Bressenham's line algorithms</mark> for pathfinding on maps from the series \"Dragon Age.\" It allows you to choose a map, a heuristic, a waypoint representation, and any two points.",
+      "img": "src/img/portfolio/portfolio-astar.jpg",
+      "overlay": "This screenshot shows the level map (green is valid tiles, blue is water), as well as all the waypoint nodes (dots). After selecting two dots, an optimal path will be found between them, marked in yellow (dots marked red were those explored in the process).",
+      "links": [
+        { "label": "Run Demo", "href": "https://play.unity.com/mg/other/webgl-kfo-1" }
+      ]
+    }
+  ],
+  "art": [
+    {
+      "id": "formal-focus",
+      "title": "Formal Focus",
+      "subtitle": "Coffee Table Book",
+      "desc": "This is a coffee table book that illustrates a few, key design elements present in graphic design. It was made using <mark>Adobe Illustrator</mark>, <mark>Photoshop</mark>, and <mark>InDesign</mark>.",
+      "img": "src/img/portfolio/portfolio-formalfocus.png",
+      "overlay": "Front cover of the book",
+      "links": [
+        { "label": "Mockup", "href": "/src/docs/ff_mock.pdf" },
+        { "label": "Spreads", "href": "/src/docs/ff_spreads.pdf" }
+      ]
+    },
+    {
+      "id": "berberis",
+      "title": "Berberis",
+      "subtitle": "Logo Design",
+      "desc": "This is a logo I made for a fictional company, Berberis, that sells wine only by the barrel. I made it using <mark>Adobe Illustrator</mark> and <mark>Photoshop</mark>.",
+      "img": "src/img/portfolio/portfolio-berberis.png",
+      "overlay": "The logo and a mockup render of it.",
+      "links": []
+    },
+    {
+      "id": "dead-in-the-water",
+      "title": "Dead in the Water",
+      "subtitle": "Grunge Concert Poster",
+      "desc": "This is a grunge-style concert poster I made for a fictional music festival, Dead in the Water. The full version & mockups are visible below. I made it using <mark>Adobe Illustrator</mark>.",
+      "img": "src/img/portfolio/portfolio-ditw.png",
+      "overlay": "This is a cropped version of the full poster",
+      "links": [
+        { "label": "Slides", "href": "/src/docs/deadinthewater.pdf" }
+      ]
+    },
+    {
+      "id": "sip-smrt-renders",
+      "title": "Smart Boot Renders",
+      "subtitle": "3D Models",
+      "desc": "These are 3D renders made in <mark>Blender</mark> of the SipSmrt smart boot product.",
+      "img": "src/img/portfolio/portfolio-siprenders.png",
+      "overlay": "Bottle mockup and the boot rendering",
+      "links": []
+    }
+  ]
+}
