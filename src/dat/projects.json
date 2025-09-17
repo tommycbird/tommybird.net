@@ -36,6 +36,17 @@
       ]
     },
     {
+      "id": "stakr",
+      "title": "Stakr",
+      "subtitle": "Pre-rendering Python Package",
+      "desc": "This is a python tool designed to precompute voxel renders by slicing them, aligning the slices into a viewport (twice, once for the model and again for its shadow). The 2D images are much faster to load. It was made using <mark>Python</mark> with the <mark>PyOpenGL</mark> and <mark>Pillow</mark> libraries.",
+      "img": "src/img/portfolio/portfolio-stakr.png",
+      "overlay": "Top right is the orginal voxel model. It goes into Stakr (GUI top left), and computes the spritesheet for the precomputed render (bottom), as well as its shadows (as seen in the GUI).",
+      "links": [
+        { "label": "Source Code", "href": "https://github.com/tommycbird/stakr" }
+      ]
+    },
+    {
       "id": "sipsmrt",
       "title": "SipSmrt",
       "subtitle": "Mobile App",
@@ -105,14 +116,50 @@
   ],
   "game-dev": [
     {
+      "id": "stub",
+      "title": "STUB",
+      "subtitle": "Game Jam Entry",
+      "desc": "This was made in under 96 hours for the <mark>GMTK Game Jam 2025</mark> and received placed top 10% in a few categories out of 9000+ submissions. It was made using the <mark>Godot</mark> game engine, and it is currently being worked into a full release for Steam & Consoles.",
+      "img": "src/img/portfolio/portfolio-stub.png",
+      "overlay": "Chamber 5 of the Game Jam version",
+      "links": [
+        { "label": "Play Demo", "href": "https://birdburger.itch.io/stub" },
+        { "label": "Trailer", "href": "https://www.youtube.com/watch?v=XSKEm-1vCI0"}
+      ]
+    },
+    {
+      "id": "piece-of-cake",
+      "title": "Piece of Cake",
+      "subtitle": "Game Jam Entry",
+      "desc": "Made for <mark>Brackeys 2025.1 Game Jam</mark>, this game was created in a week. It's a platformer, made in <mark>Godot</mark>, where you must heist food out of various homes / restaurants and escape.",
+      "img": "src/img/portfolio/portfolio-pieceofcake.png",
+      "overlay": "The games cover art.",
+      "links": [
+        { "label": "Play Demo", "href": "https://birdburger.itch.io/piece-of-cake" },
+        { "label": "Trailer", "href": "https://www.youtube.com/watch?v=EV8v6chO0co"}
+      ]
+    },
+    {
+      "id": "steel-seed",
+      "title": "Steel Seed",
+      "subtitle": "Game Jam Entry",
+      "desc": "This game was created in under a month for the <mark>Boss Rush Jam 2025</mark>. It's a top-down & action-platformer hybrid, featuring 5 difficult boss fights. It was made using the <mark>Godot</mark> game engine. This is also the first jam I have participated in.",
+      "img": "src/img/portfolio/portfolio-steelseed.png",
+      "overlay": "The 'Rockem' boss fight.",
+      "links": [
+        { "label": "Play Demo", "href": "https://birdburger.itch.io/steelseed" },
+        { "label": "Trailer", "href": "https://www.youtube.com/watch?v=uES5V4djkfM"}
+      ]
+    },
+    {
       "id": "daily-disc",
       "title": "Daily Disc",
-      "subtitle": "Video Game",
-      "desc": "Daily Disc is a desktop / mobile game I created in the <mark>Godot</mark> game engine. It boasts randomly generated maps, created using perlin noise. The game features a leaderboard system as well. Each day, a daily course is given to all users, and players can compete to do better than their friends.",
+      "subtitle": "Mobile Game",
+      "desc": "Daily Disc is a mobile game I created in the <mark>Godot</mark> game engine. It has randomly generated maps created using perlin noise. The game features a leaderboard system as well. Each day, a daily course is given to all users, and players can compete to do better than their friends.",
       "img": "src/img/portfolio/portfolio-dailydisc.png",
-      "overlay": "These are simply (outdated) screenshots of the gameplay, showcasing a birds-eye view of the randomly generated map, as well as the throwing mechanic on the disc.",
+      "overlay": "This is an outdated screenshot of the gameplay, showcasing the throwing mechanic on the disc.",
       "links": [
-        { "label": "Demo Unavailable", "href": "#portfolio" }
+        { "label": "iOS App Store", "href": "https://apps.apple.com/us/app/daily-disc/id6621275654" }
       ]
     },
     {
