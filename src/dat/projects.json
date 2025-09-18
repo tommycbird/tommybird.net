@@ -188,6 +188,14 @@
   ],
   "art": [
     {
+      "id": "personal-brand",
+      "title": "Personal Brand",
+      "subtitle": "Iconography",
+      "desc": "This logo, along with some other material, is personal branding I made for myself for freelance work / this portfolio. It's vector art made using <mark>Graphite</mark> an open-source Illustrator alternative.",
+      "img": "src/img/portfolio/portfolio-personalbrand.png",
+      "overlay": "The letter T + a bird. Self-explanatory."
+    },
+    {
       "id": "formal-focus",
       "title": "Formal Focus",
       "subtitle": "Coffee Table Book",
